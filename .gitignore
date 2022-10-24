@@ -1,0 +1,5 @@
+# all
+.idea
+.DS_Store
+venv
+# TODO: add additional gitignore rules here

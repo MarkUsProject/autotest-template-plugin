@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+settings() {
+    # TODO: add code that prints a json string containing the settings schema for your plugin here
+}
+
+before_test() {
+  # The process that runs this function will also have environment variables set to the settings configured by the
+  #    end user as specified by the settings json schema (see the settings function above)
+
+  #TODO: add code here that is executed before each test is run. Print a json string containing
+  #      environment variables that will be passed to the process that runs the test(s).
+}
+
+[ "$1" = "settings" ] && settings
+[ "$1" = "before_test" ] && before_test

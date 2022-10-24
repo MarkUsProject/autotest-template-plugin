@@ -1,0 +1,26 @@
+{
+  "#TODO: fill in the name of your plugin here (note that this needs to be unique across all plugins)": {
+    "title": "",
+    "type": "object",
+    "properties": {
+      "enabled": {
+        "title": "#TODO: add a human readable name for your plugin here",
+        "type": "boolean"
+      }
+    },
+    "dependencies": {
+      "enabled": {
+        "oneOf": [
+          {
+            "properties": {
+              "enabled": {
+                "const": true
+              },
+              "#TODO: add additional configuration settings for your plugin here under the properties key. These will be passed to the process that runs *.cli before_test as environment variables": {}
+            }
+          }
+        ]
+      }
+    }
+  }
+}
